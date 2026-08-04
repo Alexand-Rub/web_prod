@@ -1,0 +1,6 @@
+<svg class="fullscreen-btn" id="fullscreenBtn" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fff" stroke-width="2">
+                    <polyline points="5,15 5,5 15,5"/>
+                    <polyline points="25,5 35,5 35,15"/>
+                    <polyline points="35,25 35,35 25,35"/>
+                    <polyline points="15,35 5,35 5,25"/>
+                </svg>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link href="https://fonts.cdnfonts.com/css/crypto-scam" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Интро -->
+    <div class="intro-overlay" id="introOverlay">
+        <video id="introVideo" autoplay muted playsinline>
+            <source src="/video/intro.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Фоновое видео -->
+    <video class="bg-video" id="bgVideo" autoplay muted loop playsinline>
+        <source src="/video/bg.mp4" type="video/mp4">
+    </video>
+
+    <!-- Линия скролла -->
+    <div class="scroll-indicator">
+        <div class="dot-top"></div>
+        <div class="thumb" id="scrollThumb"></div>
+        <div class="dot-bottom"></div>
+    </div>
+
+    <!-- Первый экран — плеер -->
+    <section class="hero">
+        <div class="player-wrapper">
+
+            <div class="player-container" id="playerContainer">
+                <video id="showreelVideo" playsinline>
+                    <source src="video/intro.mp4" type="video/mp4">
+                </video>
+                <div class="play-btn" id="playBtn"></div>
+                <div class="fullscreen-btn" id="fullscreenBtn" title="Full screen"></div>
+            </div>
+
+            <div class="showreel-decor showreel-label">SHOWREEL</div>
+            <div class="showreel-decor showreel-decor-num"></div>
+            <div class="showreel-decor showreel-decor-line1"></div>
+            <div class="showreel-decor showreel-decor-line2"></div>
+            <div class="showreel-decor showreel-decor-line3"></div>
+        </div>
+    </section>
+
+    <!-- Второй экран — карточки -->
+    <section class="cards-section">
+        <div class="cards-wrapper">
+            <svg class="cards-lines" id="cardsLines"></svg>
+
+            <a href="#" class="card card-about">
+                <p class="card-label">ABOUT ME</p>
+                <div class="card-block" id="cardAbout"></div>                
+            </a>
+            <a href="#" class="card card-case">
+                <p class="card-label">CASE STUDIES</p>
+                <div class="card-block" id="cardCase"></div>                
+            </a>
+            <a href="#" class="card card-price">
+                <p class="card-label">PRICE</p>
+                <div class="card-block" id="cardPrice"></div>                
+            </a>
+            <a href="#" class="card card-faq">
+                <p class="card-label">FAQ</p>
+                <div class="card-block" id="cardFaq"></div>                
+            </a>
+        </div>
+    </section>
+
+    <!-- Третий экран — кнопки контактов -->
+    <section class="contact-section">
+        <div class="contact-buttons">
+            <a href="#" class="contact-btn">
+                <p class="contact-lable">CONTACTS</p>
+                <div class="contact-svg svg-1"></div>
+                <div class="contact-svg svg-2"></div>
+                <div class="contact-svg svg-3"></div>
+                <div class="contact-svg svg-4"></div>
+            </a>
+            <a href="#" class="contact-btn">
+                <p class="contact-lable">LET'S DISCUSS</p>
+                <div class="contact-svg svg-5"></div>
+                <div class="contact-svg svg-6"></div>
+                <div class="contact-svg svg-7"></div>
+            </a>
+            <a href="#" class="contact-btn">
+                <p class="contact-lable">CALL ME BACK</p>
+                <div class="contact-svg svg-8"></div>
+                <div class="contact-svg svg-9"></div>
+                <div class="contact-svg svg-10"></div>
+            </a>
+        </div>
+    </section>
+
+    <script src="js/intro.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/lines.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.scroll-indicator {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.15);
+    z-index: 1000;
+}
+.scroll-indicator .thumb {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 40px;
+    background: #fff;
+    border-radius: 4px;
+    transition: top 0.1s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+.scroll-indicator .dot-top,
+.scroll-indicator .dot-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+}
+.scroll-indicator .dot-top { top: -3px; }
+.scroll-indicator .dot-bottom { bottom: -3px; }
