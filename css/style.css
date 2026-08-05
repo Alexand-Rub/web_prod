@@ -273,7 +273,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 60px;
-    width: 90%;
+    width: 85%;
     max-width: 1400px;
 }
 
