@@ -63,6 +63,10 @@ section {
 
 /* ===== ПЛЕЕР (1 экран) ===== */
 
+.hero {
+    overflow: hidden;
+}
+
 .player-wrapper {
     position: relative;
     width: 70%;
@@ -193,11 +197,13 @@ section {
 }
 
 /* ===== ВТОРОЙ ЭКРАН — КАРТОЧКИ ===== */
+
+
 .cards-wrapper {
     position: relative;
     width: 90%;
     max-width: 1400px;
-    height: 80vh;
+    /* height: 80vh; */
 }
 
 .card {
@@ -413,3 +419,7 @@ section {
             object-fit: contain;
             filter: grayscale(0%);
         }
+
+@media screen {
+    
+}
